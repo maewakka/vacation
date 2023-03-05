@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="layout/default_layout">
+    <th:block layout:fragment="content">
+        <body>
+            <div sec:authorize="isAnonymous()">로그인</div>
+            <div sec:authorize="isAuthenticated()">로그아웃</div>
+        </body>
+        <script type="text/javascript" th:src="@{/js/main.js}" />
+    </th:block>
+</html>

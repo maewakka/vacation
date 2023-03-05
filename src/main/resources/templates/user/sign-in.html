@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="login">로그인</button>
+</body>
+
+<script>
+    document.getElementById("login").addEventListener('click', () => {
+        location.href = '/oauth2/authorization/kakao'
+    })
+</script>
+
+</html>

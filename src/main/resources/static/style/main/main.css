@@ -1,0 +1,24 @@
+.log-box {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.thumbnail-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.nickname {
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+}
